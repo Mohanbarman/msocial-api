@@ -2,8 +2,7 @@ import { ApolloServer, gql } from 'apollo-server';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 
-import resolvers from './graphql/resolvers';
-import typeDefs from './graphql/types';
+import {resolvers, typeDefs} from './graphql';
 
 
 async function startServer() {
