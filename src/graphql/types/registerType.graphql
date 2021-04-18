@@ -1,4 +1,6 @@
 input RegisterInput {
+    firstName: String!
+    lastName: String
     username: String!
     password: String!
     confirmPassword: String!
@@ -6,5 +8,5 @@ input RegisterInput {
 }
 
 type Mutation {
-    register(registerInput: RegisterInput): User!
+    registerUser(registerInput: RegisterInput): User!
 }
