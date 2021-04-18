@@ -1,12 +1,12 @@
 import getPosts from './getPosts';
-import register from './register';
+import registerUser from './registerUser';
 
 const resolvers = {
     Query: {
         getPosts,
     },
     Mutation: {
-        register,
+        registerUser,
     }
 }
 

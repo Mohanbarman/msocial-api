@@ -1,4 +1,4 @@
-import { model, Schema, ObjectId } from 'mongoose';
+import { model, Schema } from 'mongoose';
 
 
 const postSchema = new Schema({
