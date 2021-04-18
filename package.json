@@ -11,9 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@graphql-tools/load-files": "^6.3.2",
+    "@graphql-tools/merge": "^6.2.13",
     "apollo-server": "^2.23.0",
     "dotenv": "^8.2.0",
     "graphql": "^15.5.0",
+    "graphql-tools": "^7.0.4",
     "mongoose": "^5.12.4"
   },
   "devDependencies": {

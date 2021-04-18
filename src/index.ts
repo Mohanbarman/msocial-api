@@ -1,8 +1,10 @@
 import { ApolloServer, gql } from 'apollo-server';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import resolvers from './resolvers';
-import typeDefs from './typeDefs';
+
+import resolvers from './graphql/resolvers';
+import typeDefs from './graphql/types';
+
 
 async function startServer() {
     // Loading environment variables from .env file

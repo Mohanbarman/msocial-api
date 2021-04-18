@@ -1,0 +1,14 @@
+type User {
+    id: ID!
+    firstName: String!
+    lastName: String
+    profilePicture: String
+    email: String!
+    password: String!
+    createdAt: String!
+    updatedAt: String!
+}
+
+type Query {
+    getUsers: [User]
+}

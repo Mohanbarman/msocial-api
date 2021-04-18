@@ -1,6 +1,8 @@
+import getPosts from './getPosts';
+
 const resolvers = {
     Query: {
-        hello: () => 'Hello world',
+        getPosts,
     }
 }
 
