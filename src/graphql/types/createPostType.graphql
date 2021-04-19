@@ -1,0 +1,8 @@
+input PostInput {
+    body: String!
+    username: String!
+}
+
+type Mutation {
+    createPost(postInput: PostInput): Post!
+}
