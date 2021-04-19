@@ -8,5 +8,5 @@ input RegisterInput {
 }
 
 type Mutation {
-    registerUser(registerInput: RegisterInput): User!
+    registerUser(registerInput: RegisterInput): UserToken!
 }
