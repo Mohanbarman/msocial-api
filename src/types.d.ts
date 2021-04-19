@@ -1,10 +1,10 @@
 type RegisterUserInputType = {
-    firstName: String,
-    lastName: String,
-    username: String,
-    password: String,
-    confirmPassword: String,
-    email: String,
+    firstName: string,
+    lastName: string,
+    username: string,
+    password: string,
+    confirmPassword: string,
+    email: string,
 }
 
 type UserType = {
