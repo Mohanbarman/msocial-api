@@ -4,7 +4,6 @@ type User {
     lastName: String
     profilePicture: String
     email: String!
-    password: String!
     createdAt: String!
     updatedAt: String!
 }
