@@ -7,6 +7,11 @@ type RegisterUserInputType = {
     email: string,
 }
 
+type PostInputType = {
+    body: string,
+    username: string,
+}
+
 type UserType = {
     firstName: string,
     lastName: string,
