@@ -15,7 +15,7 @@ async function startServer() {
     await mongoose.connect(databse_url, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
     console.log('🗄️  Connected to the databse');
 
-    const server = new ApolloServer({ typeDefs, resolvers });
+    const server = new ApolloServer({ typeDefs, resolvers, context: ({ req }) => (req) });
     const serverInfo = await server.listen({ port: 4000 });
 
     return `🚀 Server running on ${serverInfo.url}`;
