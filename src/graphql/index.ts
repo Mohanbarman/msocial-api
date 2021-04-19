@@ -3,6 +3,7 @@ import { loadFilesSync } from '@graphql-tools/load-files';
 import { mergeTypeDefs } from '@graphql-tools/merge';
 
 import getPosts from './resolvers/getPosts';
+import getToken from './resolvers/getToken';
 import registerUser from './resolvers/registerUser';
 
 // merging all types from ./types directory
@@ -12,6 +13,7 @@ export const typeDefs = mergeTypeDefs(typesArray);
 export const resolvers = {
     Query: {
         getPosts,
+        getToken,
     },
     Mutation: {
         registerUser,
