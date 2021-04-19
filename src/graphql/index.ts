@@ -5,6 +5,7 @@ import { mergeTypeDefs } from '@graphql-tools/merge';
 import getPosts from './resolvers/getPosts';
 import getToken from './resolvers/getToken';
 import registerUser from './resolvers/registerUser';
+import validateUser from './resolvers/validateUser';
 
 // merging all types from ./types directory
 const typesArray = loadFilesSync(path.join(__dirname, 'types'), { extensions: ['graphql'] });
@@ -14,6 +15,7 @@ export const resolvers = {
     Query: {
         getPosts,
         getToken,
+        validateUser,
     },
     Mutation: {
         registerUser,
