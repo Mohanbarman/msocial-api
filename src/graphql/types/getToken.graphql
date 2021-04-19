@@ -1,0 +1,7 @@
+type Token {
+    token: String!
+}
+
+type Query {
+    getToken(email: String!, password: String!): Token!
+}
