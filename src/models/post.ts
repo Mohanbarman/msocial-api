@@ -1,5 +1,26 @@
-import { model, Schema } from 'mongoose';
+import { model, Schema, Document } from 'mongoose';
 
+interface PostInterface extends Document {
+    id: string;
+    image: string;
+    body: string;
+    username: string;
+    user: UserType;
+    createdAt: string;
+    comments: [
+        {
+            body: string;
+            username: string;
+            createdAt: string;
+        }
+    ];
+    likes: [
+        {
+            username: string;
+            createdAt: string;
+        }
+    ]
+}
 
 const postSchema = new Schema({
     image: String,
@@ -25,4 +46,4 @@ const postSchema = new Schema({
     ]
 });
 
-export default model('post', postSchema);
+export default model<PostInterface>('post', postSchema);
