@@ -1,8 +1,8 @@
-type LoginUser {
+type UserToken {
     user: User!
     token: String!
 }
 
 type Mutation {
-  login(email: String!, password: String!): LoginUser!
+  login(email: String!, password: String!): UserToken!
 }
